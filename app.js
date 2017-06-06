@@ -2,7 +2,7 @@ var PORT = process.env.PORT || 3000;
 
 var express = require('express');
 var app = express();
-var router = require('./router/main')(app);
+var router = require('./routes/main')(app);
 var path = require('path');
 
 app.set('views',__dirname + '/views');
